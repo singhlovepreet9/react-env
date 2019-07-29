@@ -8,5 +8,4 @@ jobs:
 
     steps:
       -checkout 
-      -run: cd client
-      -run: npm run build && aws s3 sync build/ s3://serverless-graphql-demo
+      -run: cd ./client npm run build && aws s3 sync build/ s3://serverless-graphql-demo
